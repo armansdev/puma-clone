@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/607bd7ac2c.js" crossorigin="anonymous"></script>
+    <title>PUMA</title>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+        }
+
+        /* Header */
+        header {
+            text-align: center;
+            padding: 10px;
+        }
+
+        /* Navbar */
+        nav {
+            position: sticky;
+            top: 0;
+            z-index: 1;
+            display: flex;
+            align-items: center;
+            gap: 10vw;
+            width: 100vw;
+            font-weight: 600;
+            background-color: #181818;
+            color: white;
+            padding: 10px 35px;
+        }
+
+        .nav-left {
+            display: flex;
+            align-items: center;
+            gap: 28px;
+            list-style: none;
+            padding: 0;
+            cursor: pointer;
+        }
+
+        .nav-left li:hover {
+            border-bottom: 2px solid goldenrod;
+        }
+
+        .nav-right {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .search {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 10px 25px;
+            font-weight: 400;
+            border: 1px solid gray;
+            cursor: pointer;
+
+            &:hover {
+                border: 1px solid #FFF;
+            }
+        }
+
+        .nav-icons {
+            font-size: 20px;
+            padding: 10px;
+
+            &:hover {
+                background-color: gray;
+                border-radius: 50%;
+            }
+        }
+
+        .extra {
+            background-color: #414584;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .extra h3 {
+            margin: 0 0 4px;
+        }
+
+        .extra p {
+            color: #B8B9CC;
+            margin: 0;
+        }
+
+        /* Palermo Section */
+        .palermo {
+            height: 500px;
+            background-color: #DAD1CC;
+            padding: 50px;
+            margin-top: 20px;
+        }
+
+        .palermo h1 {
+            font-size: 36px;
+            letter-spacing: 1px;
+            margin: 0;
+        }
+
+        .palermo span {
+            font-size: 22px;
+        }
+
+        .palermo button {
+            font-weight: 600;
+            color: white;
+            background-color: black;
+            border: none;
+            padding: 10px 20px;
+            margin: 15px 10px 0 0;
+            cursor: pointer;
+
+            &:hover {
+                background-color: gray;
+            }
+        }
+
+        .palermo img {
+            position: relative;
+            left: 750px;
+            bottom: 119px;
+        }
+
+        .palermo video {
+            position: relative;
+            left: 50px;
+            bottom: 580px;
+        }
+
+        /* Shoes Cards Section */
+        .shoes-cards {
+            display: flex;
+            justify-content: space-around;
+            margin: 150px 80px 0;
+        }
+
+        .shoes-cards img {
+            height: 320px;
+            width: 320px;
+        }
+
+        .shoe-details {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .shoe-details {
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        .shoe-details p {
+            max-width: 250px;
+        }
+
+        .shoe-details span {
+            margin-top: 14px;
+        }
+
+        /* Playbook Heading */
+        .play-heading {
+            text-align: center;
+            margin: 100px 0 70px;
+        }
+
+        .play-heading h1 {
+            font-size: 36px;
+            letter-spacing: 1px;
+            margin: 0;
+        }
+
+        .play-heading p {
+            color: #9E9E9E;
+        }
+
+        /* Playbook Section */
+        .playbook {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .playbook>div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .playbook img {
+            width: 350px;
+            height: 450px;
+        }
+
+        .playbook h2 {
+            letter-spacing: -1px;
+            margin: 20px 0 10px;
+        }
+
+        .playbook button {
+            font-weight: 600;
+            color: white;
+            background-color: black;
+            border: none;
+            padding: 15px 30px;
+            margin: 10px 0 80px 0;
+            cursor: pointer;
+
+            &:hover {
+                background-color: gray;
+            }
+        }
+
+        @media screen and (max-width: 600px) {
+
+            header,
+            .nav,
+            .extra {
+                width: 100vw;
+            }
+
+            .palermo {
+                display: flex;
+                flex-wrap: wrap;
+            }
+
+            .shoes-cards,
+            .playbook {
+                display: grid;
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        EXTRA 5% DISCOUNT AND FREE SHIPPING ON ALL ONLINE PAYMENTS.
+    </header>
+    <nav>
+        <ul class="nav-left">
+            <img src="puma-logo.png" alt="puma-logo" height="30px" width="30px">
+            <li>New</li>
+            <li>Women</li>
+            <li>Men</li>
+            <li>Kids</li>
+            <li>Motorsport</li>
+            <li>FENTYxPUMA</li>
+            <li>Collaborations</li>
+            <li>Sports</li>
+            <li>Sale</li>
+            <li>Bulk Savings</li>
+        </ul>
+        <div class="nav-right">
+            <div class="search"><i class="fa-solid fa-magnifying-glass"></i>SEARCH</div>
+            <div><i class="nav-icons fa-regular fa-heart"></i></div>
+            <div><i class="nav-icons fa-solid fa-cart-shopping"></i></div>
+            <div><i class="nav-icons fa-regular fa-user"></i></div>
+        </div>
+    </nav>
+    <div class="extra">
+        <h3>EXTRA 15% OFF ON ORDERS ABOVE ₹3999*</h3>
+        <p>Auto-accepted at checkout | *Exclusions apply</p>
+    </div>
+
+
+    <section class="palermo">
+        <div>
+            <h1>PALERMO</h1>
+            <span>REWRITE THE CLASSICS</span>
+            <div>
+                <button>SHOP NOW</button>
+                <button>EXPLORE STYLE GUIDE</button>
+            </div>
+        </div>
+        <div><img
+                src="https://cdn.sanity.io/images/qa41whrn/prod/45adb00438bd290f62f1146b0792436e60087fe4-3200x3200.jpg?w=2160&q=80&auto=format"
+                alt="palermo-img" height="650px" width="650px"></div>
+        <div>
+            <video autoplay muted width="750px">
+                <source src="https://cdn.sanity.io/files/qa41whrn/prod/2269b9809fbb0cc903469eabd884b3de0ac70c80.mp4"
+                    type="video/mp4">
+            </video>
+        </div>
+    </section>
+
+    <section class="shoes-cards">
+        <div>
+            <img src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_450,h_450/global/395104/02/sv01/fnd/IND/fmt/png/PUMA-Club-5v5-SD-Unisex-Sneakers"
+                alt="PUMA-Club-5v5">
+            <div class="shoe-details">
+                <p>PUMA Club 5v5 SD Unisex Sneakers</p>
+                <span>₹3,709</span>
+            </div>
+        </div>
+        <div>
+            <img src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_450,h_450/global/308419/01/sv01/fnd/IND/fmt/png/Porsche-Legacy-Caven-2.0-Turbo-Unisex-Motorsport-Sneakers"
+                alt="Porsche-Legacy-Caven-2">
+            <div class="shoe-details">
+                <p>Porsche Legacy Caven 2.0 Turbo Unisex Motorsport Sneakers</p>
+                <span>₹4,899</span>
+            </div>
+        </div>
+        <div>
+            <img src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_300,h_300/global/392332/07/sv01/fnd/IND/fmt/png/Caven-2.0-VTG-Unisex-Sneakers"
+                alt="Caven-2.0">
+            <div class="shoe-details">
+                <p>Caven 2.0 VTG Unisex Sneakers</p>
+                <span>₹4,799</span>
+            </div>
+        </div>
+        <div>
+            <img src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_300,h_300/global/308427/01/sv01/fnd/IND/fmt/png/Mercedes-AMG-Petronas-F1®-Speedfusion-OG-Unisex-Motorsport-Sneakers"
+                alt="Mercedes-AMG-Petronas-F1">
+            <div class="shoe-details">
+                <p>Mercedes-AMG-Petronas-F1® Speedfusion OG Unisex Motorsport Sneakers</p>
+                <span>₹5,699</span>
+            </div>
+        </div>
+    </section>
+
+    <div class="play-heading">
+        <h1>PALERMO PLAYBOOK</h1>
+        <p>Style 'em your way, every day</p>
+    </div>
+
+    <section class="playbook">
+        <div>
+            <img src="https://cdn.sanity.io/images/qa41whrn/prod/a0baeb671b2d2521b0fb92aced51edbc451c5718-2083x2708.jpg?auto=format&w=2160&q=80"
+                alt="streetwear-staple">
+            <h2>STREETWEAR STAPLE</h2>
+            <button>SHOP NOW</button>
+        </div>
+        <div>
+            <img src="https://cdn.sanity.io/images/qa41whrn/prod/faa9d6bbc65cf26709372d27ce9ba2884708c84b-2083x2708.jpg?auto=format&w=2160&q=80"
+                alt="night-out-looks">
+            <h2>NIGHT-OUT LOOKS</h2>
+            <button>SHOP NOW</button>
+        </div>
+        <div>
+            <img src="https://cdn.sanity.io/images/qa41whrn/prod/8adef940f580b6559e730b05954bbedfb1491822-2083x2708.jpg?auto=format&w=2160&q=80"
+                alt="playful-outings">
+            <h2>PLAYFUL OUTINGS</h2>
+            <button>SHOP NOW</button>
+        </div>
+        <div>
+            <img src="https://cdn.sanity.io/images/qa41whrn/prod/ef2d5db96e29d8ad45056fb19c0ce3aedd545d56-2083x2708.jpg?auto=format&w=2160&q=80"
+                alt="The Festive Edit">
+            <h2>THE FESTIVE EDIT</h2>
+            <button>SHOP NOW</button>
+        </div>
+    </section>
+</body>
+
+</html>
